@@ -1,6 +1,6 @@
 Hamburger_links:
   type: list
   list_type: simple
-  default: "Témáim,/my/activity/topics,g,layer-group|Akciók,/c/akciok/70,g,ticket-alt|VapeDIY,https://diy.vaperina.cc,g,flask,blank|Tudástér,/docs,g,lightbulb|Videótár,/pub/videotar,g,video,blank|Vaper Lokátor,/u/user-map?period=location,g,compass|Felhasználók,/u,g,user-friends|Kitüntetések,/badges,g,certificate|Névjegy,/about,f,info|Szabályzat,/faq,f,scroll|Torta Nap!,/cakeday/anniversaries/today,f,birthday-cake"
+  default: "Témáim,/my/activity/topics,g,layer-group|Követési folyam,/my/follow/feed,g,discourse-follow-new-reply|Akciók,/c/akciok/70,g,ticket-alt|VapeDIY,https://diy.vaperina.cc,g,flask,blank|Tudástér,/docs,g,lightbulb|Videótár,/pub/videotar,g,video,blank|Vaper Lokátor,/u/user-map?period=location,g,compass|Felhasználók,/u,g,user-friends|Kitüntetések,/badges,g,certificate|Névjegy,/about,f,info|Szabályzat,/faq,f,scroll|Torta Nap!,/cakeday/anniversaries/today,f,birthday-cake"
   description:
     en: 'Comma delimited in this order: Text,URL,Location,Target.<br><b>Text:</b> what appears on the menu.<br><b>URL:</b> the path for the link.<br><b>Location:</b> where you want the link to appear. Use "g" for generalLinks and "f" for footerLinks.<br><b>Target (optional):</b> use "blank" to open the link in a new tab.'
