@@ -3,10 +3,9 @@
     let [rawLabel, href, loc, icon, target] = (link || "").split(",");
     let className = `sidebar-section-link-custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
 
-    loc = "f" === loc ? "sidebar-more-section-links-details-content-secondary" : "sidebar-more-section-links-details-content-main";
     target = "blank" === target ? "_blank" : "";
 
-    api.decorateWidget(`hamburger-menu:${loc}`, () => {
+    api.decorateWidget(`hamburger-menu`, () => {
       return { href: href, rawLabel, className: className, icon, attributes: {"target": target} }
     });
   });
