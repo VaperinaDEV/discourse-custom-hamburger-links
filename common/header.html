@@ -5,7 +5,7 @@
 
     target = "blank" === target ? "_blank" : "";
 
-    api.decorateWidget(`hamburger-menu`, () => {
+    api.decorateWidget(`hamburger-menu:generalLinks`, () => {
       return { href: href, rawLabel, className: className, icon, attributes: {"target": target} }
     });
   });
