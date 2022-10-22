@@ -1,7 +1,7 @@
 <script type="text/discourse-plugin" version="0.8.18">
   (settings.Hamburger_links || "").split("|").forEach(link => {
     let [rawLabel, href, loc, icon, target] = (link || "").split(",");
-    let className = `sidebar-section-link-custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
+    let className = `custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
 
     target = "blank" === target ? "_blank" : "";
 
