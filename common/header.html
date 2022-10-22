@@ -1,12 +1,12 @@
 <script type="text/discourse-plugin" version="0.8.18">
   (settings.Hamburger_links || "").split("|").forEach(link => {
-    let [rawLabel, href, loc, icon, target] = (link || "").split(",");
+    let [rawLabel, href, icon, target] = (link || "").split(",");
     let className = `custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
 
     target = "blank" === target ? "_blank" : "";
 
     api.decorateWidget(`hamburger-menu:generalLinks`, () => {
-      return { href: href, rawLabel, className: className, icon, attributes: {"target": target} }
+      return { rawLabel, href: href, className: className, icon, attributes: {"target": target} }
     });
   });
 </script>
