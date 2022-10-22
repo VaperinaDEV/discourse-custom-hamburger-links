@@ -1,9 +1,9 @@
 <script type="text/discourse-plugin" version="0.8.18">
   (settings.Hamburger_links || "").split("|").forEach(link => {
     let [rawLabel, href, loc, icon, target] = (link || "").split(",");
-    let className = `custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
+    let className = `sidebar-section-link-custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
 
-    loc = "f" === loc ? "footerLinks" : "generalLinks";
+    loc = "f" === loc ? "sidebar-more-section-links-details-content-secondary" : "sidebar-more-section-links-details-content-main";
     target = "blank" === target ? "_blank" : "";
 
     api.decorateWidget(`hamburger-menu:${loc}`, () => {
